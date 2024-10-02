@@ -1,0 +1,7 @@
+sort_order = request.args.get("sort_order")
+
+    # Sort the dataframe based on the rank column.
+    if sort_order == "trending":
+       dbdata.sort("rank", 1)
+    elif sort_order == "lagging":
+        dbdata.sort("rank", -1)

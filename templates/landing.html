@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fashion</title>
+<style>
+  /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header nav {
+  margin-top: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.hero p {
+  font-size: 24px;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.hero .discount {
+  font-size: 48px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #ff4081;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>FASHION STORE</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/products">Shop</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="/static/woman.jpg" alt="Fashion Sale">
+  <h1>GREAT FASHION SALE</h1>
+  <p>GET UP TO <span class="discount">50%</span> OFF</p>
+  <a href="/products" class="btn">SHOP NOW</a>
+</section>
+
+<footer>
+  <p>Copyright &copy; 2023 <a href="#">Fashion Store</a></p>
+</footer>
+
+</body>
+</html>

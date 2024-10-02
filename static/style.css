@@ -1,0 +1,93 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header nav {
+  margin-top: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+  .hero {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .hero .btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .content {
+    padding: 50px 0;
+  }
+  
+  .content h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  .content p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .discount {
+    color: red;
+  }

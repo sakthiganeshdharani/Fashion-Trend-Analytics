@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header nav {
+            margin-top: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        /* Section Styles */
+        section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        select#sort-by {
+            font-size: 16px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Product List Styles */
+        #product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .product-card {
+            width: 48%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-card h3.price {
+            color: #e91e63;
+        }
+
+        .product-card p a {
+            text-decoration: none;
+            color: #2196F3;
+            font-weight: bold;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Shop</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/products">Shop</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</header>
+<section>
+    <form action="/sort" method="post">
+        <select id="sort-by" name="sort-by">
+            <option value="trending">Trending</option>
+            <option value="lagging">Lagging</option>
+        </select>
+        <input type="submit" value="View">
+    </form>
+</section>
+<div id="product-list">
+    {% for document in data %}
+    <div class="product-card">
+        <img src="{{ document.product_picture }}" alt="{{ document.title_orig }}" />
+        <h3>{{ document.title_orig }}</h3>
+        <h3 class="price">Price: ${{ document.price }}</h3>
+        <p><a href="{{ document.product_url }}">View Product</a></p>
+    </div>
+    {% endfor %}
+</div>
+
+<footer>
+    <p>&copy; 2023 <a href="#">Fashion Store</a></p>
+</footer>
+
+</body>
+</html>

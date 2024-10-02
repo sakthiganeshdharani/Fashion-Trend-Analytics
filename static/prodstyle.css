@@ -1,0 +1,88 @@
+/* Body */
+
+body {
+  font-family: sans-serif;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+header nav {
+  margin-top: 20px;
+}
+
+header nav a {
+  text-decoration: dashed;
+  color: black;
+  margin: 0 10px;
+}
+
+/* Product list */
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.product-card {
+  width: 25%;
+  margin: 10px;
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Sort by form */
+
+section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#sort-by {
+  width: 150px;
+  margin: 0 10px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
